@@ -79,7 +79,7 @@ p{
 /*************style tags***********/
 
 .tag{
-  
+
 }
 .h1tag::before {
   content: '<h1>';
@@ -176,6 +176,7 @@ p{
   font-size: 1.8rem;
   position: absolute;
   padding-left: 3rem;
+  margin-top: -3rem;
 }
 
 /************Intro***********/
@@ -325,7 +326,6 @@ p{
   font-size: 15px;
   margin-left: 10%;
   margin-top: 3%;
-  transition-duration: 0.4s;
   z-index: 2;
   position: absolute;
   cursor: pointer;
@@ -335,8 +335,15 @@ p{
   padding: 3px 4px;
 }
 
+.download{
+  margin-left: 15rem;
+}
+.contactbtn{
+  margin-top: 22px;
+  }
 /*******portfolio********/
-.portfolio{font-family: 'Alfa Slab One', sans-serif;
+.portfolio{
+font-family: 'Alfa Slab One', sans-serif;
 color: cyan;
 font-size: 35px;
 line-height: 1;
@@ -357,4 +364,35 @@ margin-top: 200px;
 
 .blast2:hover {
   animation-name: rubberBand;
+}
+
+/*****sphere******/
+
+.tagcloud {
+ display: inline-block;
+ top: 100px;
+ left: 32%;
+ letter-spacing: 1px;
+ font-family: 'Alfa Slab One', sans-serif;
+ font-size: 15px;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item:hover {
+ color: #FFF323 ;
+}
+
+/**********contactMe*******/
+
+.location{
+  float: right;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+form input, form textarea{
+  padding: 20px;
 }
