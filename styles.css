@@ -1,0 +1,387 @@
+body {
+  background-color: #191919;
+}
+
+canvas {
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+span {
+  position: relative;
+  z-index: 1;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 5rem;
+
+  color: white;
+  letter-spacing: 1px;
+}
+
+/***********icons***********/
+.container {
+  box-sizing: border-box;
+  display: flex;
+  margin-left: 70%;
+}
+
+.icon {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  color: rgb(207, 207, 207);
+  font-size: 2.5rem;
+  margin: 1rem;
+  padding: 0 15px;
+  border-radius: 20px;
+  background: #191918;
+  text-decoration: none;
+  z-index: 0;
+}
+
+.insta:hover {
+  color: rgb(241, 98, 170);
+  cursor: pointer;
+}
+
+.tweet:hover {
+  color: #646FD4;
+  cursor: pointer;
+}
+
+.linkdin:hover {
+  color: cyan;
+  cursor: pointer;
+}
+
+.git:hover {
+  color: #A760FF;
+  cursor: pointer;
+}
+
+.insta:active,
+.tweet:active,
+.linkdin:active,
+.git:active {
+  transform: scale(1.6);
+  transition: box-shadow .3s, transform 6s cubic-bezier(.5, 4, 1, 2);
+}
+
+/*************style tags***********/
+
+.tag{
+
+}
+.h1tag::before {
+  content: '<h1>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-top: 5rem;
+  padding-left: 3rem;
+}
+
+.h1closetag::after {
+  content: '</h1>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 40rem;
+  margin-top: -4rem;
+}
+
+.bodytag::before {
+  content: '<body>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+  margin-top: 1rem
+}
+
+.htmltag::before {
+  content: '<html>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+
+  padding-left: 3rem;
+}
+
+.ptag::before {
+  content: '<p>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+  margin-top: -3rem;
+}
+
+.ptag::after {
+  content: '</p>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+}
+
+.h2tag::before{
+  content: '<h2>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+  margin-top: 11rem;
+}
+
+.h2Closetag::after{
+  content: '</h2>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+  margin-top: -3rem;
+}
+
+.h2tag2::before{
+  content: '<h2>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+}
+
+.ptag2::before {
+  content: '<p>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+}
+
+.ptag2close::after {
+  content: '</p>';
+  font-family: 'La Belle Aurore', cursive;
+  color: #515152;
+  font-size: 1.8rem;
+  position: absolute;
+  padding-left: 3rem;
+  margin-top: -3rem;
+}
+
+/************Intro***********/
+.intro {
+  font-family: 'Alfa Slab One', sans-serif;
+  color: #fff;
+  font-size: 50px;
+  line-height: 1;
+  padding-left: 4rem;
+  font-weight: 400;
+}
+
+.blast {
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: color 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.blast:hover {
+  animation-name: rubberBand;
+  color: cyan;
+}
+
+@keyframes rubberBand {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.rubberBand {
+  animation-name: rubberBand;
+}
+
+/************frontendline*********/
+.front {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 5rem;
+  margin-top: -1.5rem;
+  color: #8d8d8d;
+  letter-spacing: 5px;
+}
+
+
+/*****cv download button****/
+
+
+.cv {
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 5rem;
+  z-index: 2;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 3px 4px;
+}
+
+.download{
+  margin-left: 10rem;
+}
+.contactbtn{
+  margin-top: 22px;
+  }
+/********portflio*******/
+.portfolio{
+font-family: 'Alfa Slab One', sans-serif;
+color: cyan;
+font-size: 35px;
+line-height: 1;
+padding-left: 4rem;
+font-weight: 400;
+margin-top: 200px;
+}
+
+.blast2 {
+  display: inline-block;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: color 1s;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+}
+
+.blast2:hover {
+  animation-name: rubberBand;
+}
+
+.skills{
+font-family: 'Alfa Slab One', sans-serif;
+color: cyan;
+font-size: 35px;
+line-height: 1;
+padding-left: 4rem;
+font-weight: 400;
+padding-top: 3rem;
+}
+
+/*********sphere*********/
+.Sphere{
+  display: flex;
+justify-content: center;}
+
+
+/*****footer******/
+
+
+.footer-basic {
+  position: relative;
+  padding:40px 0;
+  color:#8d8d8d;
+text-align: center;
+
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+
+.footer-basic .copyright {
+  margin-top:15px;
+  font-size:13px;
+  color:white;
+  margin-bottom:0;
+  margin-right: 80px;
+}
+
+@media (max-width: 1000px) {
+
+  .container{
+    margin-left: 60%;
+  }
+  .icon{
+    font-size: 3.5rem;
+  }
+
+  .cv{
+    font-size: 30px;
+  }
+
+  .portfolio{
+    font-weight: 100;
+    font-size: 45px;
+  }
+
+  .skills{
+    font-weight: 100;
+    font-size: 45px;
+  }
+
+}
