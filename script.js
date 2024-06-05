@@ -276,8 +276,8 @@ canvas.addEventListener('mousemove', function(e){
 //*****Sphere********//
 
 const Texts = [
-    'HTML', 'CSS', 'JAVASCRIPT','REACT','MUI',
-    'BOOTSTRAP','GRAPHQL','GIT', 'JAVA','REDUX','SEO','UI/UX'
+    'HTML', 'CSS', 'JAVASCRIPT','REACT JS','MUI',
+    'BOOTSTRAP','GRAPHQL','GIT','REDUX','SEO','UI/UX','Next JS','Material UI'
 ];
 
 var tagCloud = TagCloud('.Sphere', Texts, {
