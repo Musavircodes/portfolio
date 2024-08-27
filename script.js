@@ -1,3 +1,29 @@
+
+emailjs.init("vwUQ1XbPFQsi9CMQF");
+
+
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+
+    
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData.entries());
+
+    
+    emailjs.send("service_ottz7pr", "template_forzks8", data)
+        .then(response => {
+            console.log("Sent successfully", response);
+            alert("Your message has been sent successfully!");
+            document.getElementById("contact-form").reset(); // Reset the form
+        })
+        .catch(error => {
+            console.error("Error sending message", error);
+            alert("Failed to send your message. Please try again later.");
+        });
+});
+
+
+
 var canvas = document.getElementById('nokey'),
    can_w = parseInt(canvas.getAttribute('width')),
    can_h = parseInt(canvas.getAttribute('height')),
