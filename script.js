@@ -1,15 +1,8 @@
-
 emailjs.init("vwUQ1XbPFQsi9CMQF");
-
-
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault(); 
-
-    
     const formData = new FormData(this);
     const data = Object.fromEntries(formData.entries());
-
-    
     emailjs.send("service_ottz7pr", "template_forzks8", data)
         .then(response => {
             console.log("Sent successfully", response);
