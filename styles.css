@@ -562,7 +562,7 @@ iframe {
   border-radius: 100px;
   color: var(--color-green);
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   z-index: 1;
   transition: all 0.18s ease;
   background: rgba(0, 0, 0, .3);
