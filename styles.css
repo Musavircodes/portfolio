@@ -24,8 +24,8 @@ span {
   z-index: 1;
 }
 
-p{
-  font-family: 'Open Sans', sans-serif;
+p {
+  font-family: "Open Sans", sans-serif;
   margin-left: 5rem;
 
   color: white;
@@ -36,9 +36,13 @@ p{
 .container {
   box-sizing: border-box;
   display: flex;
-  margin-left: 70%;
+  justify-content: flex-end;
+  align-items: center;
 }
-
+.icons-container {
+  display: flex;
+  align-items: center;
+}
 .icon {
   display: grid;
   justify-content: center;
@@ -62,7 +66,7 @@ p{
 }
 
 .tweet:hover {
-  color: #646FD4;
+  color: #646fd4;
   cursor: pointer;
 }
 
@@ -72,7 +76,7 @@ p{
 }
 
 .git:hover {
-  color: #A760FF;
+  color: #a760ff;
   cursor: pointer;
 }
 
@@ -81,15 +85,14 @@ p{
 .linkdin:active,
 .git:active {
   transform: scale(1.6);
-  transition: box-shadow .3s, transform 6s cubic-bezier(.5, 4, 1, 2);
+  transition: box-shadow 0.3s, transform 6s cubic-bezier(0.5, 4, 1, 2);
 }
 
 /*************style tags***********/
 
-
 .h1tag::before {
-  content: '<h1>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -98,8 +101,8 @@ p{
 }
 
 .h1closetag::after {
-  content: '</h1>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "</h1>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -108,18 +111,18 @@ p{
 }
 
 .bodytag::before {
-  content: '<body>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "<body>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
   padding-left: 3rem;
-  margin-top: 1rem
+  margin-top: 1rem;
 }
 
 .htmltag::before {
-  content: '<html>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "<html>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -128,8 +131,8 @@ p{
 }
 
 .ptag::before {
-  content: '<p>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -138,17 +141,17 @@ p{
 }
 
 .ptag::after {
-  content: '</p>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
   padding-left: 3rem;
 }
 
-.h2tag::before{
-  content: '<h2>';
-  font-family: 'La Belle Aurore', cursive;
+.h2tag::before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -156,9 +159,9 @@ p{
   margin-top: 11rem;
 }
 
-.h2Closetag::after{
-  content: '</h2>';
-  font-family: 'La Belle Aurore', cursive;
+.h2Closetag::after {
+  content: "</h2>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -166,9 +169,9 @@ p{
   margin-top: -3rem;
 }
 
-.h2tag2::before{
-  content: '<h2>';
-  font-family: 'La Belle Aurore', cursive;
+.h2tag2::before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -176,8 +179,8 @@ p{
 }
 
 .ptag2::before {
-  content: '<p>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -185,8 +188,8 @@ p{
 }
 
 .ptag2close::after {
-  content: '</p>';
-  font-family: 'La Belle Aurore', cursive;
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.8rem;
   position: absolute;
@@ -196,7 +199,7 @@ p{
 
 /************Intro***********/
 .intro {
-  font-family: 'Alfa Slab One', sans-serif;
+  font-family: "Alfa Slab One", sans-serif;
   color: #fff;
   font-size: 50px;
   line-height: 1;
@@ -237,11 +240,11 @@ p{
   }
 
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
 
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
 
   to {
@@ -255,16 +258,14 @@ p{
 
 /************frontendline*********/
 .front {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   margin-left: 5rem;
   margin-top: -1.5rem;
   color: #8d8d8d;
   letter-spacing: 5px;
 }
 
-
 /*****cv download button****/
-
 
 .cv {
   border-radius: 8px;
@@ -280,18 +281,18 @@ p{
   margin-left: 10rem;
 }
 
-.contactbtn{
+.contactbtn {
   margin-top: 22px;
-  }
+}
 /********portflio*******/
-.portfolio{
-font-family: 'Alfa Slab One', sans-serif;
-color: cyan;
-font-size: 35px;
-line-height: 1;
-padding-left: 4rem;
-font-weight: 400;
-margin-top: 200px;
+.portfolio {
+  font-family: "Alfa Slab One", sans-serif;
+  color: cyan;
+  font-size: 35px;
+  line-height: 1;
+  padding-left: 4rem;
+  font-weight: 400;
+  margin-top: 200px;
 }
 
 .blast2 {
@@ -308,145 +309,138 @@ margin-top: 200px;
   animation-name: rubberBand;
 }
 
-.skills{
-font-family: 'Alfa Slab One', sans-serif;
-color: cyan;
-font-size: 35px;
-line-height: 1;
-padding-left: 4rem;
-font-weight: 400;
+.skills {
+  font-family: "Alfa Slab One", sans-serif;
+  color: cyan;
+  font-size: 35px;
+  line-height: 1;
+  padding-left: 4rem;
+  font-weight: 400;
 }
 
-.skills-2{
-  font-family: 'Alfa Slab One', sans-serif;
+.skills-2 {
+  font-family: "Alfa Slab One", sans-serif;
   color: cyan;
   font-size: 30px;
   line-height: 1;
-  
-  font-weight: 400;
-  }
-/*********sphere*********/
-.Sphere{
-  display: flex;
-justify-content: center;}
 
+  font-weight: 400;
+}
+/*********sphere*********/
+.Sphere {
+  display: flex;
+  justify-content: center;
+}
 
 /*****footer******/
 
-
 .footer-basic {
   position: relative;
-  padding:40px 0;
-  color:#8d8d8d;
-text-align: center;
-
+  padding: 40px 0;
+  color: #8d8d8d;
+  text-align: center;
 }
 
 .footer-basic ul {
-  padding:0;
-  list-style:none;
-  font-size:18px;
-  line-height:1.6;
-  margin-bottom:0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
-
 .footer-basic ul a {
-  color:inherit;
-  text-decoration:none;
-  opacity:0.8;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .footer-basic ul a:hover {
-  opacity:1;
+  opacity: 1;
 }
-
 
 .footer-basic .copyright {
-  margin-top:15px;
-  font-size:13px;
-  color:white;
-  margin-bottom:0;
+  margin-top: 15px;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 0;
   margin-right: 80px;
 }
-.getInTouch{
+.getInTouch {
   display: flex;
   justify-content: start;
 }
 @media (max-width: 1000px) {
-
-  .container{
+  .container {
     margin-left: 60%;
   }
   .container-2 {
-    flex-direction: column !important; 
-}
-.map-container {
-    height: 50vh; 
-}
-.contact-form-container{
-  height: 30vh !important;
-}
-  .icon{
+    flex-direction: column !important;
+  }
+  .map-container {
+    height: 50vh;
+  }
+  .contact-form-container {
+    height: 30vh !important;
+  }
+  .icon {
     font-size: 3.5rem;
   }
 
-  .front{
+  .front {
     margin-left: 0;
     letter-spacing: 3px;
     text-align: center;
     margin-top: -3rem;
   }
 
-  .cv{
+  .cv {
     font-size: 30px;
   }
 
-  .portfolio{
+  .portfolio {
     font-weight: 100;
     font-size: 45px;
   }
 
-  .skills{
+  .skills {
     font-weight: 100;
     font-size: 45px;
   }
-
 }
 .container-2 {
   display: flex;
-  height: 70vh; 
-  flex-direction: row; 
+  height: 70vh;
+  flex-direction: row;
   padding: 3rem;
-  
 }
-.map-container, .contact-form-container {
-  flex: 1; 
-  padding: 20px; 
-  box-sizing: border-box; 
+.map-container,
+.contact-form-container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
   border: 1px solid cyan;
 }
 .map-container {
-  background-color: transparent; 
+  background-color: transparent;
 }
 .contact-form-container {
-  background-color: #515152; 
+  background-color: #515152;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  
 }
 iframe {
   width: 100%;
   height: 100%;
   border: 0;
-  
 }
 .contact-form {
   display: flex;
   flex-direction: column;
 }
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   margin-bottom: 15px;
   padding: 10px;
   border: 1px solid #ccc;
@@ -454,11 +448,11 @@ iframe {
   font-size: 16px;
 }
 .contact-form textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 .contact-form button {
   padding: 10px;
-  background-color: cyan; 
+  background-color: cyan;
   border: none;
   color: #515152;
   border-radius: 5px;
@@ -466,7 +460,7 @@ iframe {
   cursor: pointer;
 }
 .contact-form button:hover {
-  background-color: #00D1D1; 
+  background-color: #00d1d1;
 }
 
 .whatsapp.icon {
@@ -475,7 +469,7 @@ iframe {
   right: 20px;
   z-index: 1000;
   font-size: 30px;
-  color: #25D366;
+  color: #25d366;
   background-color: white;
   border-radius: 50%;
   padding: 10px;
@@ -483,11 +477,9 @@ iframe {
 }
 
 .whatsapp.icon:hover {
-  color: #128C7E;
+  color: #128c7e;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
-
-
 
 @property --angle {
   syntax: "<angle>";
@@ -502,18 +494,15 @@ iframe {
 
 @keyframes rotate {
   0% {
-      --angle: 0deg;
-      --glowColor: var(--color-green);
+    --angle: 0deg;
+    --glowColor: var(--color-green);
   }
 
   100% {
-      --angle: 360deg;
-      --glowColor: var(--color-green);
+    --angle: 360deg;
+    --glowColor: var(--color-green);
   }
 }
-
-
-
 
 .container-cv {
   display: flex;
@@ -545,7 +534,14 @@ iframe {
   border-radius: calc(100px + 1.5px);
   background-size: 100% 100%;
   background-position: 0px 0px;
-  background-image: conic-gradient(from var(--angle) at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, var(--glowColor) 50%, rgba(0, 0, 0, 0) 66%, rgba(0, 0, 0, 0) 100%);
+  background-image: conic-gradient(
+    from var(--angle) at 50% 50%,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0) 33%,
+    var(--glowColor) 50%,
+    rgba(0, 0, 0, 0) 66%,
+    rgba(0, 0, 0, 0) 100%
+  );
   animation: rotate 2s infinite linear;
 }
 
@@ -565,16 +561,40 @@ iframe {
   font-size: 20px;
   z-index: 1;
   transition: all 0.18s ease;
-  background: rgba(0, 0, 0, .3);
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(40px);
   backface-visibility: hidden;
 }
 
 .btn:hover .btnInner {
-  background: rgba(88, 221, 147, .1);
+  background: rgba(88, 221, 147, 0.1);
   color: #adeeca;
 }
 
 .btn:active {
   transform: scale(0.95);
+}
+.eye {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 10px;
+}
+.pupil {
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.05s linear;
+}
+.container-eye {
+  display: flex;
+  justify-content: center;
 }
